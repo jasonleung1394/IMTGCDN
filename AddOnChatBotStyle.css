@@ -1,0 +1,172 @@
+:root {
+    --chat--message--bot--background: transparent;
+    --chat--message--user--background: transparent;
+    --chat--message--user--color: black;
+    --chat--border-radius: 20px;
+    --chat--window--border-radius: 1rem;
+    --chat--header--background: #ffffff;
+    --chat--toggle--color: #ffffff;
+    --chat--toggle--background: #23aed8;
+    --chat--toggle--hover--background: #365aea;
+    --chat--color-primary-shade-100: #0a3643;
+    --chat--header--padding: 0 0 0 1rem;
+    --chat--spacing: 0.5rem;
+    --chat--textarea--height: auto;
+    --chat--window--width: 600px;
+    --chat--header--color: black;
+    --chat--message--font-size: 0.7rem;
+    --chat--color-light:#f7f7f7;
+}
+*,
+*:before,
+*:after {
+    box-sizing: content-box !important;
+}
+p{
+    color: #000;
+}
+
+.chat-header {
+    display: flex;
+
+}
+
+.chat-header img {
+    height: 3vh;
+    margin: 5px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.chat-header span {
+    align-self: center;
+    /* padding-top: 15px; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.chat-avatar {
+    width: 40px;
+    /* height: 30px; */
+    padding-top: 5px;
+}
+
+.chat-message-from-bot {
+    display: grid;
+    grid-template-columns: 3rem auto;
+    grid-template-areas:
+        "avatar message vote"
+        "timestamp timestamp vote";
+    gap: 0.75vw;
+}
+
+.chat-message-from-bot img {
+    border-radius: 20rem;
+}
+
+
+.chat-message-timeStamp {
+    grid-area: timestamp;
+    font-size: 12px;
+}
+
+.chat-message-markdown {
+    padding: 20px;
+    background-color: white;
+    border-radius: 1rem;
+}
+.chat-message-from-user .chat-message-markdown{
+    background-color: #f1f4f7;
+}
+
+.chat-input-send-button {
+    cursor: pointer !important;
+}
+
+.chat-message-from-bot .chat-message-markdown {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.chat-message-from-user {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.chat-message-from-user .chat-message-timeStamp {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.chat-message-from-user {
+    width: 400px;
+}
+
+.chat-message-from-user .chat-message-markdown p {
+    white-space: normal;
+    overflow: hidden;
+    margin: 0;
+
+}
+
+.vote-buttons {
+    grid-area: vote;
+    display: flex;
+    flex-direction: column;
+    width: 35px;
+}
+
+.vote-buttons .upvote {
+    color: rgb(88, 220, 88);
+}
+
+.vote-buttons .downvote {
+    color: rgb(255, 112, 112);
+}
+
+.vote-buttons button {
+    background: none;
+    transition: all 0.5s ease-in;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.vote-buttons button:hover {
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 255, .2);
+    border: none;
+    cursor: pointer;
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+    margin-top: 5px;
+    width: 10px;
+    height: 10px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    animation: l5 1s infinite linear alternate;
+}
+
+@keyframes l5 {
+    0% {
+        box-shadow: 20px 0 #000, -20px 0 #0002;
+        background: #000
+    }
+
+    33% {
+        box-shadow: 20px 0 #000, -20px 0 #0002;
+        background: #0002
+    }
+
+    66% {
+        box-shadow: 20px 0 #0002, -20px 0 #000;
+        background: #0002
+    }
+
+    100% {
+        box-shadow: 20px 0 #0002, -20px 0 #000;
+        background: #000
+    }
+}
