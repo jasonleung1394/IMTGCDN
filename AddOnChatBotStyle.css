@@ -6,7 +6,7 @@
     --chat--window--border-radius: 1rem;
     --chat--header--background: #ffffff;
     --chat--toggle--color: #ffffff;
-    --chat--toggle--background: #23aed8;
+    --chat--toggle--background: #113dec;
     --chat--toggle--hover--background: #365aea;
     --chat--color-primary-shade-100: #0a3643;
     --chat--header--padding: 0 0 0 1rem;
@@ -17,13 +17,11 @@
     --chat--message--font-size: 0.7rem;
     --chat--color-light:#f7f7f7;
 }
+
 *,
 *:before,
 *:after {
     box-sizing: content-box !important;
-}
-p{
-    color: #000;
 }
 
 .chat-header {

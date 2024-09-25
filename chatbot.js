@@ -5937,7 +5937,7 @@ const Rt = oh(), ih = { class: "chat-layout" }, lh = {
     chatSessionKey: "sessionId",
     defaultLanguage: "en",
     showWelcomeScreen: !1,
-    initialMessages: ["Hello, I am Sofia! Welcome to IMTG!"],
+    initialMessages: ["Hello, Welcome to Thanexa!"],
     i18n: {
         en: {
             title: "Hi there! 👋",
@@ -10347,7 +10347,7 @@ const S9 = A9, ps = /* @__PURE__ */ Ue({
         // Function to determine avatar URL based on sender
         const getAvatarUrl = () => {
             if (n.value.sender === "bot") {
-                return "https://cdn.jsdelivr.net/gh/jasonleung1394/IMTGCDN@main/1715577004386_v1_1024.jpg"; // Replace with actual bot avatar URL
+                return "https://dev80.imtg.com.au/ThanexaCDN/1715577004386_v1_1024.jpg"; // Replace with actual bot avatar URL
             } else if (n.value.sender === "user") {
                 return "https://cdn.jsdelivr.net/gh/jasonleung1394/mycdn@latest/robot.png"; // Replace with actual user avatar URL
             }
@@ -10542,7 +10542,7 @@ const L9 = { name: "mdi-send", render: F9 }, O9 = { class: "chat-input" }, P9 = 
             await i(), !o.showWelcomeScreen && !s.value && await c();
         }), (l, a) => (oe(), Se(uh, { class: "chat-wrapper" }, {
             header: ft(() => [
-                we("img", { src: Zn(ge(e)("https://www.imtg.com.au/wp-content/uploads/2017/12/IMTG-logo-transparent.png")) }, null, 1),
+                we("img", { src: Zn(ge(e)("https://www.thanexa.com/wp-content/uploads/2021/05/THANEXA-LOGO-BLUE.png")) }, null, 1),
             ]),
             footer: ft(() => [
                 ge(s) ? (oe(), Se($9, { key: 0 })) : (oe(), Se(kh, { key: 1 }))
